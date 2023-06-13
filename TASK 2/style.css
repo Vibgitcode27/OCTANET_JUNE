@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    padding:2px;
+    background-color: rgb(32, 33, 33);
+}
+.list-panel{
+    border-radius: 20px;
+    background-color: aliceblue;
+    height: 350px;
+    width: 470px;
+    margin: 100px auto 20px;
+}
+
+.list-panel h1
+{
+    font-family: 'Geologica', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.list-panel h1 span
+{
+    font-family: 'Geologica', sans-serif;
+    color: rgb(82, 188, 188);
+}
+#single-color{
+    color: rgba(72, 72, 72, 0.972);
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    padding: 10px 30px;
+    background-color: rgb(175, 172, 172);
+    border-radius: 30px;
+}
+.search input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+}
+button{
+    border:none;
+    border-radius: 30px;
+    width: 40px;
+    height: 15px;
+    transform: scale(2.5);
+    font-size: 6px;
+    background-color: rgb(87, 210, 210);
+    cursor: crosshair;
+}
+hr{
+    margin: 20px 5px;
+    color: cyan;
+}
+.task-list ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.task-list ul li{
+    margin: 10px 10px;
+    padding: 5px 20px;
+    background-color: rgba(102, 102, 102, 0.208);
+    border-radius: 20px;
+    font-family: 'Geologica', sans-serif;
+}
+ul li.marked{
+    color: rgb(73, 191, 191);
+    text-decoration: line-through;
+}
+
+ul li b
+{
+    position: absolute;
+    right: 570px;
+    padding: 0px 10px;
+}
+ul li b:hover{
+    background-color: rgba(102, 102, 102, 0.539);
+    border-radius: 10px;
+}
+ul li i
+{
+    position: absolute;
+    right: 500px;
+    padding: 0px 10px;
+}
+ul li i:hover{
+    background-color: rgba(102, 102, 102, 0.539);
+    border-radius: 10px;
+}
