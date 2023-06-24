@@ -1,0 +1,642 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    user-select: none;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main{
+    height: 100%;
+    width: 390px;
+   /* border: 2px solid red;*/
+    display: flex;
+    
+}
+
+.blocking{
+    height: 70px;
+    width: 390px;
+    display: block;
+    position: fixed;
+    transform: rotate(360deg);
+    
+    bottom: -10px;
+    
+    background-color: black;
+    border-top: 1px solid rgb(133, 131, 131);
+}
+
+#side{
+    
+    transform: rotate(360deg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    width: 390px;
+    position: sticky;
+    user-select: none;
+}
+
+.icons{
+    
+    
+    width: 150px;
+    height: 60px;
+    margin-left: -50px;
+    margin-bottom: 10px;
+}
+
+.icons:hover{
+    
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    
+    cursor: pointer;
+}
+
+.top{ 
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.top:hover{
+    background-color: black;
+    width: 150px;
+}
+.top img{
+    height: 30px;
+    width: 100px;
+}
+
+#story{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -70px;  
+    height: 100px;
+    width: 350px;
+    margin-left: 350px;
+    overflow-x: auto;
+    text-align: center;
+    
+}
+h5{
+    font-size: 10px;
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-left: -1px;
+    color: rgb(133, 131, 131);
+}
+
+#story::-webkit-scrollbar{
+    width: 0;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.meristory{
+    margin-top: 30px;
+    min-width: 50px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border: 3px solid rgb(87, 87, 87);
+    border-radius: 50px;
+}
+
+.meristory img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.box .your{
+     border: 3px solid rgb(238, 33, 81);
+    
+}
+
+.bark{
+    color: white;
+}
+
+#content{
+    /*border: 2px solid green;*/
+    margin-top: 100px;
+    margin-left: -320px;
+    height: 100vh;
+    width: 100%;
+}
+
+#feed{
+    display: flex;
+    /*border: 2px solid rgb(225, 255, 0);*/
+    height: 100vh;
+    width: 100%;
+}
+
+#posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 450px;
+    /*border: 2px solid white;*/
+    margin-left: 365px;
+}
+
+#posts .oop{
+
+    width: 250px;
+    min-height: 400px;
+    height: 400px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    margin-bottom: 300px;
+}
+
+#posts .oop .underpost{
+    display: flex;
+    align-items: center;
+    width: 490px;
+    height: 50px;
+    cursor: pointer;
+    /*border: 2px solid orangered;*/
+}
+
+.underpost .ex{
+    
+    height: 32px;
+    width: 32px;
+}
+
+.underpost .ex img{
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+#caughtup{
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 200px;
+    min-height: 70px;
+    height: 70px;
+    
+    
+}
+
+#honey{
+    width: 200px;
+    min-height: 70px;
+    height: 200px;
+}
+#honey img{
+    width: 100%;
+    height: 100%;
+}
+
+.sai{
+    margin-top: 4px;
+    color: rgb(203, 200, 200);
+}
+.off{
+    color: rgb(231, 229, 229);
+}
+.ago{
+    color: rgb(159, 157, 157);
+}
+
+.headline{
+    margin-left: 11px;
+}
+
+.Tdot{
+    position: relative;
+    left: 25px;
+    transform: rotate(90deg);
+    color: white;
+    font-size: 16px;
+}
+
+.pdot{
+    left: 120px;
+}
+
+#appleblue{
+    margin-left: -10px;
+    margin-top: -12px;
+}
+
+#fool{
+    margin-left: -80px;
+}
+#posts .oop .forum{
+    margin-top: 10px;
+    width: 250px;
+    height: 400px;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 7px;
+}
+
+
+#posts .oop .forum img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.underpost .control{
+    height: 35px;
+    width: 35px;
+    /*border: 2px solid red;*/
+    margin: 2px;
+}
+.underpost .control img{
+    height: 20px;
+    width: 20x;
+  
+}
+
+.underpost .chit img{
+    margin-bottom: 9px;
+    height: 26px;
+    width: 26px;
+}
+.underpost .chit{
+    margin-bottom: 9px;
+   
+}
+.underpost .web{
+    position: relative;
+    left: 100px;
+    
+   
+}
+
+#lambo{
+    margin-left: -107px;
+}
+
+.bluetick{
+    margin-top: -10px;
+    margin-left: 7px;
+}
+.fully{
+    display: flex;
+    flex-direction: column;
+    margin-left: -160px;
+}
+
+.murli{
+    margin-top: 7px;
+    margin-left: -150px;
+}
+
+.trans{
+    color: white;
+    margin-top: 5px;
+    margin-left: -89px;
+}
+
+.dev{
+    color: rgb(121, 120, 120);
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-left: -60px;
+}
+
+.polo{
+    font-weight: lighter;
+    margin-left: -38px;
+}
+.savin{
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+    margin-top: 10px;
+}
+#suggest{
+    display: none;
+    
+}
+
+#suggest .khand{
+    display: flex;
+    align-items: center;
+
+    width: 320px;
+    height: 50px;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+}
+
+.khand .subox{
+    height: 40px;
+    width: 40px;
+}
+
+.khand .subox img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.newt{
+    margin-top: 2px;
+}
+#eee{
+    display: flex;
+
+}
+
+#fr{
+    height: 60px;
+    width: 60px;
+}
+
+#fr img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.yyy{
+    margin-left: 13px;
+}
+h4{
+    
+    font-size: 11px;
+    color: rgb(212, 208, 208);
+}
+
+.newt{
+    color: rgb(159, 157, 157);
+}
+.oldt{
+    color: rgb(88, 87, 87);
+    margin-top: 14px;
+    
+}
+#footer{
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(88, 87, 87);
+    margin-bottom: 10px;
+
+}
+
+.zzz{
+    position: absolute;
+    right: 28px;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(34, 147, 246);
+}
+
+h6:hover{
+    color: white;
+}
+
+#seeall{
+    color: white;
+}
+#seeall:hover{
+    color: rgb(88, 87, 87);
+}
+.mega{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pointx{
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+}
+
+.pointy{
+    display: none;
+}
+
+.botty{
+    display: none;
+}
+
+
+.icons .chaticon{
+    width: 0px;
+    height: 0px;
+    display: none;
+
+}
+
+#profile{
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+}
+#profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+#home{
+    margin-left: 15px;
+    font-size: 35px;
+
+}
+
+#search{
+    margin-left: 15px;
+    font-size: 35px;
+}
+
+#reel img{
+    height: 29px;
+    width: 29px;
+    margin-left: 25px;
+}
+
+#heart{
+    font-size: 27px;
+    margin-left: 3px;
+}
+
+#create img{
+    height: 23px;
+    width: 23px;
+    margin-left: 5px;
+}
+
+#menu{
+    font-size: 30px;
+    margin-left: 2px;
+}
+
+h3{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(224, 222, 222);
+}
+
+#logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 220px;
+    left: 20px;
+    height: 400px;
+    width: 270px;
+    border-radius: 14px;
+    background-color: rgb(45, 45, 45);
+    display: none;
+    
+}
+
+#logout h4{
+    color: rgb(237, 235, 235);
+    font-weight: lighter;
+}
+#logout h3{
+    color: rgb(159, 157, 157);
+    
+}
+
+#logout .kk{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*border: 2px solid white;*/
+    border-radius: 7px;
+    
+}
+#logout .kk:hover{
+    background-color: rgba(88, 87, 87, 0.83);
+    cursor: pointer;
+}
+
+.kk .cola{
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+   
+}
+
+.kk .ekta{
+    position: absolute;
+    right: 20px;
+}
+
+.kk .ch{
+    width: 150px;
+}
+
+#down{
+    position: relative;
+    top: 18px;
+    left: -100px;
+}
+
+#mota{
+    width: 270px;
+    height: 9px;
+    background-color: rgba(76, 75, 75, 0.91);
+    border: none;
+}
+
+#patla{
+    width: 270px;
+    border: 1px solid rgba(76, 75, 75, 0.91);
+}
+
+.whiteheart{
+    position: absolute;
+    bottom: 100px;
+    left: 615px;
+}
+.whiteheart img{
+    animation: heartgrow 1.2s ease-in;
+    -webkit-animation: heartgrow 1.2s ease-in;
+}
+.whitehearttwo{
+    position: absolute;
+    top: 1450px;
+    left: 615px;
+}
+.whitehearttwo img{
+    animation: heartgrow 1.2s ease-in;
+    -webkit-animation: heartgrow 1.2s ease-in;
+}
+.whiteheartthree{
+    position: absolute;
+    top: 3300px;
+    left: 615px;
+}
+.whiteheartthree img{
+    animation: heartgrow 1.2s ease-in;
+    -webkit-animation: heartgrow 1.2s ease-in;
+}
+
+@keyframes heartgrow {
+    25%{
+        opacity: 0.8;
+    }
+
+    50%{
+        
+        opacity: 0.6;
+    }
+
+    75%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+#instalogo{
+    position: absolute;
+    bottom: 900px;
+    left: 100px;
+    
+    
+}
