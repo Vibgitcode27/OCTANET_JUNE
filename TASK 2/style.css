@@ -78,7 +78,7 @@ ul li.marked{
 ul li b
 {
     position: absolute;
-    right: 570px;
+    right: 650px;
     padding: 0px 10px;
 }
 ul li b:hover{
@@ -88,7 +88,7 @@ ul li b:hover{
 ul li i
 {
     position: absolute;
-    right: 500px;
+    right: 560px;
     padding: 0px 10px;
 }
 ul li i:hover{
